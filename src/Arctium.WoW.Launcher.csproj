@@ -2,7 +2,7 @@
 
     <PropertyGroup>
         <OutputPath>../build/$(Configuration)/bin</OutputPath>
-        <AssemblyName>Arctium WoW Launcher</AssemblyName>
+        <AssemblyName>Arctium WoW BCC Launcher</AssemblyName>
         <ApplicationIcon>logo.ico</ApplicationIcon>
         <OutputType>Exe</OutputType>
         <TargetFramework>net6.0</TargetFramework>
@@ -11,8 +11,8 @@
         <AppendRuntimeIdentifierToOutputPath>False</AppendRuntimeIdentifierToOutputPath>
         <Nullable>disable</Nullable>
         <LangVersion>preview</LangVersion>
-        <AssemblyVersion>9.0.0.0</AssemblyVersion>
-        <FileVersion>9.0.0.0</FileVersion>
+        <AssemblyVersion>2.5.0.0</AssemblyVersion>
+        <FileVersion>2.5.0.0</FileVersion>
         <Copyright>Arctium</Copyright>
         <Platforms>x64</Platforms>
     </PropertyGroup>

@@ -7,7 +7,7 @@ namespace Arctium.WoW.Launcher;
 
 class Program
 {
-    static string wowBinary = "Wow.exe";
+    static string wowBinary = "WowClassic.exe";
     static string wowPath = string.Empty;
     static bool keepCache = false;
     static string consoleArgs = string.Empty;
@@ -54,8 +54,8 @@ class Program
     {
         // App info
         var curDir = AppDomain.CurrentDomain.BaseDirectory;
-        var dataDir = $"{curDir}/_retail_";
-        var appPath = $"{curDir}/_retail_/{wowBinary}";
+        var dataDir = $"{curDir}/_classic_";
+        var appPath = $"{curDir}/_classic_/{wowBinary}";
 
         if (!string.IsNullOrEmpty(wowPath))
         {
@@ -70,7 +70,7 @@ class Program
             appPath = $"{curDir}/{wowBinary}";
         }
 
-        if (!File.Exists(appPath) || GetVersionValueFromClient(appPath, 3) != 9)
+        if (!File.Exists(appPath) || GetVersionValueFromClient(appPath, 3) != 2)
         {
             Console.ForegroundColor = ConsoleColor.Red;
             Console.WriteLine($"Copy this launcher to your game folder!");
@@ -85,11 +85,11 @@ class Program
             WaitAndExit(300000);
         }
 
-        if (GetVersionValueFromClient(appPath, 0) < 37862 && GetVersionValueFromClient(appPath, 0) != 0)
+        if (GetVersionValueFromClient(appPath, 0) < 38644 && GetVersionValueFromClient(appPath, 0) != 0)
         {
             Console.ForegroundColor = ConsoleColor.Red;
             Console.WriteLine($"Your client version {GetVersionValueFromClient(appPath, 0)} is not supported.");
-            Console.WriteLine($"The minimum required build is 9.0.5.37862");
+            Console.WriteLine($"The minimum required build is 2.5.1.38644");
 
             WaitAndExit(10000);
         }
