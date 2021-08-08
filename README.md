@@ -24,9 +24,9 @@ You can find signed binary releases at [Arctium](https://arctium.io/wow)
 * Native output is placed in `build\Release\bin\native`
 
 ### Usage Windows
-1. Copy `Actium WoW Launcher.exe` to your World of Warcraft folder.
+1. Copy `Actium WoW BCC Launcher.exe` to your World of Warcraft folder.
 2. Optional: Edit the `WTF/Config.wtf` to set your portal or use a different config file with the `-config Config2.wtf` launch arg.
-3. Run the `Actium WoW Launcher.exe`
+3. Run the `Actium WoW BCC Launcher.exe`
 
 ### Parameters
 * `--path "Your WoW Path"` to specify your custom wow path.
