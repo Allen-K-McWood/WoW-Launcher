@@ -10,6 +10,14 @@ using static Arctium.WoW.Launcher.Misc.Helpers;
 if (!Process.GetCurrentProcess().ProcessName.Contains("arctium", StringComparison.InvariantCultureIgnoreCase))
     WaitAndExit();
 
+Console.ForegroundColor = ConsoleColor.Red;
+Console.WriteLine("THIS LAUNCHER IS DISCONTINUED!!! Stop asking for support.");
+Console.ForegroundColor = ConsoleColor.Yellow;
+Console.WriteLine("You can find the new supported launcher on https://arctium.io");
+Console.WriteLine();
+Console.ResetColor();
+WaitAndExit(5000);
+
 PrintHeader("WoW Client Launcher");
 
 LaunchOptions.RootCommand.SetHandler(async context =>
